@@ -11,7 +11,8 @@ editor: visual
 #| echo: false
 #| message: false
 #| warning: false
-
+#install.packages("tidyr")
+library(tidyr)
 source("drive_times_setup.R")
 
 ## Load the API key
@@ -45,7 +46,7 @@ google_map(key = api_key) %>%
 
 ```{r}
 #| echo: false
-library(tidyr)
+
 ## Pick the times at which to generate travel times
 times_to_check <- Sys.time() + c(0, 15, 30, 45, 60)*60
 
