@@ -1,6 +1,7 @@
 library(dplyr)
 library(ggplot2)
 library(googleway)
+library(tidyr)
 library(lubridate)
 library(purrr)
 
