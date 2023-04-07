@@ -19,8 +19,8 @@ api_key <- Sys.getenv("MAPS_API_KEY")
 
 ## Set origin and destination
 ## Change these to your own selections!
-ORIG <- "2221 University Ave SE, Minneapolis, MN"
-DEST <- "4940 France Ave S, Minneapolis, MN"
+ORIG <- "311 Harvard ST SE, Minneapolis, MN"
+DEST <- "2508 Delaware ST SE, Minneapolis, MN"
 ```
 
 ## Route Information
@@ -45,7 +45,7 @@ google_map(key = api_key) %>%
 
 ```{r}
 #| echo: false
-
+library(tidyr)
 ## Pick the times at which to generate travel times
 times_to_check <- Sys.time() + c(0, 15, 30, 45, 60)*60
 
